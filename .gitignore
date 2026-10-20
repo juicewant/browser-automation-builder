@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Secrets and local config - NEVER commit
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Real data and outputs
+*.xlsx
+*.xls
+*.csv
+!examples/*.xlsx
+!examples/*.csv
+reports/
+output/
+logs/
+*.log
+
+# Saved step files from real runs
+steps_*.json
+!examples/sample_steps.json
+
+# Browser drivers and IDE
+*.exe
+.idea/
+.vscode/
+.DS_Store
