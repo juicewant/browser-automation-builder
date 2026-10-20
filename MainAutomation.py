@@ -274,7 +274,7 @@ class AutomationApp(ctk.CTk):
             )
             if "salesforce" in self.url_entry.get().lower():
                 self.url_entry.delete(0, "end")
-                self.url_entry.insert(0, "https://crmoc1.mt.mtnet/sap/bc/bsp/sap/crm_ui_start/default.htm")
+                self.url_entry.insert(0, "https://www.sap.com/sea/index.html?geotargeting_redirect=true")
         else:
             self.sap_btn.configure(fg_color="#3d3d3d")
             self.sf_btn.configure(fg_color="#0070d2")
@@ -283,7 +283,7 @@ class AutomationApp(ctk.CTk):
             )
             if "mtnet" in self.url_entry.get().lower() or "sap" in self.url_entry.get().lower():
                 self.url_entry.delete(0, "end")
-                self.url_entry.insert(0, "https://mt-ap1.my.salesforce.com/home/home.jsp")
+                self.url_entry.insert(0, "https://www.salesforce.com/ap/?ir=1")
         self.log_message(f"🔄 Switched to {platform} mode")
 
     def _launch_browser(self):
